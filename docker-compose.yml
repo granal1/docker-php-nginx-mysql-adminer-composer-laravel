@@ -50,3 +50,14 @@ services:
         ports:
             - 8080:8080
 
+    # Добавляем новую службу для сборки фронтенда (Node.js)
+    # frontend:
+    #     image: node:lts
+    #     working_dir: /usr/src/app
+    #     volumes:
+    #         - ./html:/usr/src/app
+    #     command: bash -c "npm install && npm run dev" # или yarn install && yarn dev
+    #     ports:
+    #         - 3000:3000 # порт разработки фронтенда
+    #     depends_on:
+    #         - php
